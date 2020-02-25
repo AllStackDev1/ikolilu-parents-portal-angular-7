@@ -1,0 +1,10 @@
+p, p>a, .material-icons{
+    font-size: 12px;
+    color: #77a763;
+}
+.data-time {
+    position: absolute;
+    font-size: 12px;
+    padding-top: 10px;
+    color: #77a763;
+}

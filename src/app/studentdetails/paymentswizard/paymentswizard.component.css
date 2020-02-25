@@ -1,0 +1,90 @@
+::ng-deep body {
+    padding-right:0 !important;
+    margin-right:0 !important;
+}
+::ng-deep body.modal-open {
+    opacity: 1;
+    overflow: hidden;
+}
+.modal {
+    overflow-y: auto;
+}
+
+.payment_img_title{
+    padding: 20px;
+    font-size: 12px;
+}
+#banktransfer-method,#mobilemoney-method,#etranz-method,#card-method,#next,#back,#finish{
+    display: none;
+}
+#etranz-method{
+    text-align: center;
+}
+.card img {
+    width:100px !important;
+}
+.method{
+    color: inherit;
+    text-decoration: none;
+}
+#err_c_type,#err_c_name,#err_c_no,#err_mm_amt,#err_mm_type,#err_cell_no,#err_mm_name{
+    top: 37px;
+    right: 3px;
+    color: red;
+}
+#err_c_amt{
+    top: 47px;
+    right: 3px;
+    color: red;
+}
+#err_c_cvv,#err_e_d{
+    top: 47px;
+    right: 17px;
+    color: red;
+}
+#suc_c_type,#suc_c_name,#suc_c_no,#suc_mm_type,#suc_cell_no,#suc_mm_amt,#suc_mm_name{
+    top: 37px;
+    right: 3px;
+    color: green;
+}
+#suc_c_amt{
+    top: 47px;
+    right: 3px;
+    color: green;
+}
+#suc_c_cvv,#suc_e_d{
+    top: 47px;
+    right: 17px;
+    color: green;
+}
+.form_icon{
+    position: absolute;
+    display: none;
+}
+.star{
+    color: red;
+}
+.success{
+    border: 1px solid green;
+}
+.error{
+    border: 1px solid red;
+}
+.confirm-body{
+    display: none;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+#confirm-body-card-method{
+
+}
+#confirm-body-etranz-method{
+
+}
+#confirm-body-mobile-money-method{
+
+}
+#confirm-body-bank-trans-method{
+
+}

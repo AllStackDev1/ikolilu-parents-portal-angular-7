@@ -1,0 +1,9 @@
+FROM node:8.9.4 as node
+LABEL MAINTAINER Chinedu Ekene Okpala <nedu63ima@gmail.com>
+WORKDIR /pportal
+COPY package*.json ./
+RUN npm install
+COPY . /pportal
+RUN npm run build
+EXPOSE 8000
+CMD ["npm", "start"]

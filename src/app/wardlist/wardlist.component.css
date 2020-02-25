@@ -1,0 +1,40 @@
+
+.card [data-background-color="blue"] {
+    background: linear-gradient(60deg, #26c6da, #00acc1);
+}
+
+.btn.btn-success:hover{
+    background-color: #4caf50;
+    color: white;
+}
+li>a:hover{
+    background-color: inherit;
+}
+.btn.btn-success{
+    color: #4caf50;
+    background-color: white;
+    border: 1px solid #4caf50;
+}
+.preload {
+    left: 44%;
+    -webkit-transform: translate(-50%, -50%);
+    position: absolute;
+    width: 100px;
+    opacity: .50;
+    margin-top: 100px;
+    display: none;
+}
+
+.fade {
+    display: none;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(229, 255, 216, 0.4) !important;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .90;
+    filter: alpha(opacity=80);
+}

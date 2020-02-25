@@ -1,0 +1,262 @@
+<div class="modal fade" tabindex="-1" [ngClass]="{'in': visibleAnimate}" id="paymentswizard" [ngStyle]="{'display': visible ? 'block' : 'none', 'opacity': visibleAnimate ? 1 : 0}">
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"  (click)="this.hide()">&times;</button>
+            <h4 class="modal-title">Secure Online Payments</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row ">
+            <div class="card card-wizard" id="wizardCard">
+                <div class="card-content">
+                    <ul class="nav nav-pills" id="tabs">
+                        <li id="tab_1" class="active"><a aria-expanded="true">Select Payment Method</a></li>
+                        <li id="tab_2"><a aria-expanded="true">enter your payment details</a></li>
+                        <li id="tab_3"><a aria-expanded="true">confirm payment</a></li>
+                    </ul>
+                    <div class="tab-content" style="margin-top: 30px">
+                        <div class="tab-pane active" id="tab1">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <a data-toggle="tab" aria-expanded="true" class="method" id="mobilemoney" href="#tab2" (click)="method(3)">
+                                        <img src="assets/img/mobile_money.png" title="Mobile Money">
+                                        <div class="payment_img_title">Mobile Money</div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a data-toggle="tab" aria-expanded="true" class="method" id="card" href="#tab2" (click)="method(1)">
+                                        <img src="assets/img/cc3.png" title="Card">
+                                        <div class="payment_img_title">Credit Card</div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a data-toggle="tab" aria-expanded="true" class="method" id="etranz" href="#tab2" (click)="method(2)">
+                                        <img src="assets/img/eTRanz_120.png" title="eTranzact">
+                                        <div class="payment_img_title">eTranzact</div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a data-toggle="tab" aria-expanded="true" class="method" id="banktransfer" href="#tab2" (click)="method(4)">
+                                        <img src="assets/img/transfer.png" title="Bank Transfer" >
+                                        <div class="payment_img_title">Bank Transfer</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab2" style="margin-top: -20px;">
+                            <div class="row" id="card-method">
+                                <div class="col-md-3 col-md-offset-1">
+                                    <div class="form-group">
+                                        <label class="control-label" for="card-type">
+                                            Card Type    <span class="star">*</span>
+                                        </label>
+                                        <select class="form-control" id="card-type" title="Card Type" name="card-type" [(ngModel)]="cardtype">
+                                            <option disabled="" selected>- Card Type -</option>
+                                            <option value="master card">Master Card</option>
+                                            <option value="visa card">Visa Card</option>
+                                        </select>
+                                        <span class="form_icon" id="err_c_type"><i class="material-icons">clear</i></span>
+                                        <span class="form_icon" id="suc_c_type"><i class="material-icons">done</i></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-md-offset-1">
+                                    <div class="form-group">
+                                        <label class="control-label" for="card-name">
+                                            Name (as it appears on your card)    <span class="star">*</span>
+                                        </label>
+                                        <input type="text" class="form-control" id="card-name" placeholder="Kofi Mensah Abbas" [(ngModel)]="cardname">
+                                        <span class="form_icon" id="err_c_name"><i class="material-icons">clear</i></span>
+                                        <span class="form_icon" id="suc_c_name"><i class="material-icons">done</i></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-md-offset-1" style="margin-top: -11px;">
+                                    <div class="form-group">
+                                        <label class="control-label" for="card_amt">
+                                            Amount (part payment is allowed)    <span class="star">*</span>
+                                        </label>
+                                        <input type="text" class="form-control" id="card_amt" value="{{ card_amt }}" [(ngModel)]="card_amt">
+                                        <span class="form_icon" id="err_c_amt"><i class="material-icons">clear</i></span>
+                                        <span class="form_icon" id="suc_c_amt"><i class="material-icons">done</i></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-md-offset-1">
+                                    <div class="form-group">
+                                        <label class="control-label" for="card-number">
+                                            Card Number (no dashes or spaces)    <span class="star">*</span>
+                                        </label>
+                                        <input type="text" class="form-control" id="card-number" placeholder="3784658293847294" size="16" [(ngModel)]="cardnumber">
+                                        <span class="form_icon" id="err_c_no"><i class="material-icons">clear</i></span>
+                                        <span class="form_icon" id="suc_c_no"><i class="material-icons">done</i></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-offset-1" style="margin-top: -17px;">
+                                    <div class="form-group">
+                                        <div class="col-md-4">
+                                            <label class="control-label" for="card-cvv">
+                                                CVV Code (check the back of your card)    <span class="star">*</span>
+                                            </label>
+                                            <input type="text" class="form-control" id="card-cvv" name="card-cvv" placeholder="394" maxlength="4" [(ngModel)]="cardcvv">
+                                            <span class="form_icon" id="err_c_cvv"><i class="material-icons">clear</i></span>
+                                            <span class="form_icon" id="suc_c_cvv"><i class="material-icons">done</i></span>
+                                        </div>
+                                        <div class="col-md-4 col-md-offset-2">
+                                            <label class="control-label" for="expiration-date">
+                                                Expiration Date (MM/YY)    <span class="star">*</span>
+                                            </label>
+                                            <input type="text" class="form-control" id="expiration-date" placeholder="04/18" maxlength="5" [(ngModel)]="expirationdate">
+                                            <span class="form_icon" id="err_e_d"><i class="material-icons">clear</i></span>
+                                            <span class="form_icon" id="suc_e_d"><i class="material-icons">done</i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" id="etranz-method">
+                                <h4>Service Coming Soon!!!</h4>
+                            </div>
+                            <div class="row" id="mobilemoney-method">
+                                <div class="col-md-4 col-md-offset-1">
+                                    <div class="form-group">
+                                        <label class="control-label" for="mmtype">
+                                            Selete Type    <span class="star">*</span>
+                                        </label>
+                                        <select class="form-control" name="mmtype" id="mmtype" [(ngModel)]="mmtype">
+                                            <option disabled="" selected="">- Type -</option>
+                                            <option value="MTN">MTN MoMo</option>
+                                            <!--<option value="vodafonecash">Vodafone Cash</option>-->
+                                            <!--<option value="airtelmoney">Airtel Money</option>-->
+                                            <!--<option value="tigocash">Tigo Cash</option>-->
+                                        </select>
+                                        <span class="form_icon" id="err_mm_type"><i class="material-icons">clear</i></span>
+                                        <span class="form_icon" id="suc_mm_type"><i class="material-icons">done</i></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-md-offset-1">
+                                    <div class="form-group">
+                                        <label class="control-label">Cell Number    <span class="star">*</span></label>
+                                        <input class="form-control" name="cell-number" id="cell-number" placeholder="0283745483" type="text" [(ngModel)]="cellnumber">
+                                        <span class="form_icon" id="err_cell_no"><i class="material-icons">clear</i></span>
+                                        <span class="form_icon" id="suc_cell_no"><i class="material-icons">done</i></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-md-offset-1">
+                                    <div class="form-group">
+                                        <label class="control-label" for="mm-name">
+                                            Name    <span class="star">*</span>
+                                        </label>
+                                        <input type="text" class="form-control" id="mm-name" value="{{ mm_name }}" [(ngModel)]="mm_name" >
+                                        <span class="form_icon" id="err_mm_name"><i class="material-icons">clear</i></span>
+                                        <span class="form_icon" id="suc_mm_name"><i class="material-icons">done</i></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-md-offset-1">
+                                    <div class="form-group">
+                                        <label class="control-label" for="mm-amt">
+                                            Amount (part payment is allowed)    <span class="star">*</span>
+                                        </label>
+                                        <input type="text" class="form-control" id="mm-amt" value="{{ mm_amt }}" [(ngModel)]="mm_amt">
+                                        <span class="form_icon" id="err_mm_amt"><i class="material-icons">clear</i></span>
+                                        <span class="form_icon" id="suc_mm_amt"><i class="material-icons">done</i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" id="banktransfer-method">
+                                <div class="col-md-5">
+                                    <h4 class="title">From</h4>
+                                    <div class="form-group">
+                                        <label class="control-label" for="bank-from">
+                                            Selete Bank    <span class="star">*</span>
+                                        </label>
+                                        <select class="form-control" name="bank-from" id="bank-from" [(ngModel)]="bankfrom">
+                                            <option disabled="" selected="">- Bank From-</option>
+                                            <option value="Ecobank Ghana">Ecobank Ghana</option>
+                                            <option value="Guaranty Trust Bank">Guaranty Trust Bank</option>
+                                            <option value="Ghana Commercial Bank">Ghana Commercial Bank</option>
+                                            <option value="United Bank of Africa">United Bank of Africa</option>
+                                            <option value="Zenith Bank">Zenith Bank</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="acc_number_from">Account Number From</label>
+                                        <input class="form-control" name="acc_number_from" id="acc_number_from" placeholder="ex: 003984756324" type="text" [(ngModel)]="acc_number_from">
+                                    </div>
+                                </div>
+                                <div class="col-md-5  col-md-offset-1">
+                                    <h4 class="title">To</h4>
+                                    <div class="form-group">
+                                        <label class="control-label" for="bank-to">
+                                            Selete Bank    <span class="star">*</span>
+                                        </label>
+                                        <select class="form-control" name="bank-to" id="bank-to" [(ngModel)]="bankto">
+                                            <option disabled="" selected="">- Bank To-</option>
+                                            <option value="Ecobank Ghana">Ecobank Ghana</option>
+                                            <option value="Guaranty Trust Bank">Guaranty Trust Bank</option>
+                                            <option value="Ghana Commercial Bank">Ghana Commercial Bank</option>
+                                            <option value="United Bank of Africa">United Bank of Africa</option>
+                                            <option value="Zenith Bank">Zenith Bank</option>
+                                        </select>
+                                        <div class="form-group">
+                                            <label class="control-label" for="acc_number_from">Account Number To</label>
+                                            <input class="form-control" name="acc_number_from" id="acc_number_to" placeholder="ex: 003984756324" type="text" [(ngModel)]="acc_number_to">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab3">
+                            <div class="text-center text-space confirm-body" id="confirm-body-card-method">
+                                Please Confirm the payment of <strong>{{ paying_amount }}</strong> for <strong style="text-transform: uppercase">{{ paying_item }}</strong> of your ward :
+                                <div style="text-align: left; margin-left: 30%;">
+                                    <br/><label>Ward Name</label> : {{ ward_name }}
+                                    <br/><label>Ward ID</label> : {{ ward_id }}
+                                    <br/><label>Ward School ID</label> : {{ ward_school_id }}
+                                    <br/><label>Ward School Bank Name</label> : {{ ward_school_bank_name }}
+                                    <br/><label>Ward School Bank Account Number</label> : {{ ward_school_bank_acc_no }}
+                                </div>
+                                Click <strong>Finish</strong> to confirm and complete payment.
+                            </div>
+                            <div class="text-center text-space confirm-body" id="confirm-body-etranz-method">
+                                Please Confirm the payment of <strong>{{ paying_amount }}</strong> for <strong style="text-transform: uppercase">{{ paying_item }}</strong> of your ward :
+                                <div style="text-align: left; margin-left: 30%;">
+                                    <br/><label>Ward Name</label> : {{ ward_name }}
+                                    <br/><label>Ward ID</label> : {{ ward_id }}
+                                    <br/><label>Ward School ID</label> : {{ ward_school_id }}
+                                    <br/><label>Ward School Bank Name</label> : {{ ward_school_bank_name }}
+                                    <br/><label>Ward School Bank Account Number</label> : {{ ward_school_bank_acc_no }}
+                                </div>
+                                Click <strong>Finish</strong> to confirm and complete payment.
+                            </div>
+                            <div class="text-center text-space confirm-body" id="confirm-body-mobile-money-method">
+                                Please Confirm the payment of <strong>{{currency}}{{ paying_amount }}</strong> for <strong style="text-transform: uppercase">{{ paying_item }}</strong> of your ward :
+                                <div style="text-align: left; margin-left: 30%;">
+                                    <br/><label>Ward Name</label> : {{ ward_name }}
+                                    <br/><label>Ward ID</label> : {{ ward_id }}
+                                    <br/><label>Ward School ID</label> : {{ ward_school_id }}
+                                </div>
+                                Click <strong>Finish</strong> to complete payment via your mobile phone.
+                            </div>
+                            <div class="text-center text-space confirm-body" id="confirm-body-bank-trans-method">
+                                Please Confirm the payment of <strong>{{ paying_amount }}</strong> for <strong style="text-transform: uppercase">{{ paying_item }}</strong> of your ward :
+                                <div style="text-align: left; margin-left: 30%;">
+                                    <br/><label>Ward Name</label> : {{ ward_name }}
+                                    <br/><label>Ward ID</label> : {{ ward_id }}
+                                    <br/><label>Ward School ID</label> : {{ ward_school_id }}
+                                    <br/><label>Ward School Bank Name</label> : {{ ward_school_bank_name }}
+                                    <br/><label>Ward School Bank Account Number</label> : {{ ward_school_bank_acc_no }}
+                                </div>
+                                Click <strong>Finish</strong> to confirm and complete payment.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-default btn-fill btn-wd btn-back pull-left" type="button" id="back" (click)="onBack()">Back</button>
+                    <button class="btn btn-info btn-fill btn-wd btn-next pull-right" type="button" id="next" (click)="onNext()">Next</button>
+                    <button class="btn btn-info btn-fill btn-wd btn-finish pull-right" type="button" id="finish" (click)="onFinish()">Finish</button>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+</div>
+</div>

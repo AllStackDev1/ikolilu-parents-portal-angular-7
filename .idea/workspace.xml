@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d82d136c-dacf-4258-a644-925f4f93ed11" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="dashboard.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/dashboard/dashboard.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="918">
+              <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/navbar/navbar.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2074">
+              <caret line="125" column="22" selection-start-line="125" selection-start-column="22" selection-end-line="125" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#68#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>viewGradeInformation</find>
+      <find>tabs</find>
+      <find>id</find>
+      <find>field</find>
+      <find>left</find>
+      <find>40</find>
+      <find>done_outline</find>
+      <find>error_outline</find>
+      <find>getMyWardClassTermProgress</find>
+      <find>CardTypeNumberChecks</find>
+      <find>dcvvC</find>
+      <find>csv</find>
+      <find>confirm-body</find>
+      <find>selector selectorarrow</find>
+      <find>let</find>
+      <find>timestamp</find>
+      <find>program</find>
+      <find>ExamTermSubjectAnalysis</find>
+      <find>getStudentGradeList</find>
+      <find>preschool</find>
+      <find>ward_grade</find>
+      <find>stu_grades</find>
+      <find>Please Check Your Network Connection</find>
+      <find>setTime</find>
+      <find>getStudentAcaYear</find>
+      <find>StudentinfoComponent</find>
+      <find>20000</find>
+      <find>12000</find>
+      <find>getYearByAcademic</find>
+      <find>#report-calender</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/app/StudentClass.ts" />
+        <option value="$PROJECT_DIR$/src/app/billhistory.ts" />
+        <option value="$PROJECT_DIR$/src/app/notify.service.ts" />
+        <option value="$PROJECT_DIR$/src/assets/css/demo.css" />
+        <option value="$PROJECT_DIR$/src/app/getting-started/getting-started.component.html" />
+        <option value="$PROJECT_DIR$/src/app/components/navbar/navbar.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/schools.ts" />
+        <option value="$PROJECT_DIR$/src/app/components/footer/footer.component.ts" />
+        <option value="$PROJECT_DIR$/angular-cli.json" />
+        <option value="$PROJECT_DIR$/src/app/add-new-ward/add-new-ward.component.ts" />
+        <option value="$PROJECT_DIR$/dist/index.html" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/app/dashboard/dashboard.component.spec.ts" />
+        <option value="$PROJECT_DIR$/src/app/dashboard/dashboard.component.html" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/billpayments/billpayments.component.css" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/billpayments/billpayments.component.html" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/paymentswizard/paymentswizard.component.css" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/academicsinfo/academicsinfo.component.html" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/studentacademics/studentacademics.component.css" />
+        <option value="$PROJECT_DIR$/src/app/gradelist.ts" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/paymentswizard/paymentswizard.component.html" />
+        <option value="$PROJECT_DIR$/src/app/test.html" />
+        <option value="$PROJECT_DIR$/src/app/dailyreport.ts" />
+        <option value="$PROJECT_DIR$/src/app/programs.ts" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/billpayments/billpayments.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/paymentswizard/paymentswizard.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/preschool/preschool.component.css" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/preschool-academics/preschool-academics.component.html" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/preschool-academics/preschool-academics.component.css" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/preschool-academics/preschool-academics.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/preschool/preschool.component.html" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/preschool/preschool.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/studentinfo/studentinfo.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/studentinfo/preschool/preschool.component.html" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/studentinfo/preschool/preschool-academics/preschool-academics.component.html" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/studentinfo/preschool/preschool-academics/preschool-academics.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/studentacademics/studentacademics.component.html" />
+        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.routing.ts" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/studentinfo/studentinfo.component.html" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/studentinfo/studentinfo.component.css" />
+        <option value="$PROJECT_DIR$/src/app/wardlist/wardlist.component.html" />
+        <option value="$PROJECT_DIR$/src/app/general.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/studentacademics/studentacademics.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/preschool/preschool-academics/preschool-academics.component.html" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/preschool/preschool-academics/preschool-academics.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/studentdetails/preschool/preschool-academics/preschool-academics.component.css" />
+        <option value="$PROJECT_DIR$/src/app/wardlist/wardlist.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/dashboard/dashboard.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.component.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>TypeScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>TsLint</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pportal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pportal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pportal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pportal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pportal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pportal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pportal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pportal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="studentdetails" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="selector selectorarrow&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="C:/xampp/htdocs/iKolilu/studentportal/v1.2/api" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="C:\programming\angular\pportal\node_modules\tslint" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="typescript-compiler-editor-notification" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\programming\angular\pportal\src\app\studentdetails" />
+      <recent name="C:\programming\angular\pportal\src\app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\programming\angular\pportal\src\app" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+  </component>
+  <component name="StructuralSearchPlugin">
+    <searchConfiguration name="user defined" created="1517946183406" text="tim" recursive="true" caseInsensitive="true" type="TypeScript" history="1" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d82d136c-dacf-4258-a644-925f4f93ed11" name="Default" comment="" />
+      <created>1517434659126</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1517434659126</updated>
+      <workItem from="1517434660867" duration="102254000" />
+      <workItem from="1517652959909" duration="4144000" />
+      <workItem from="1517673167942" duration="199409000" />
+      <workItem from="1517986737873" duration="57752000" />
+      <workItem from="1518163497639" duration="29881000" />
+      <workItem from="1518307540154" duration="3073000" />
+      <workItem from="1518348970175" duration="1912000" />
+      <workItem from="1518430312116" duration="25424000" />
+      <workItem from="1518820085226" duration="3786000" />
+      <workItem from="1518861484593" duration="1476000" />
+      <workItem from="1518912285033" duration="1204000" />
+      <workItem from="1519057366358" duration="8949000" />
+      <workItem from="1519152082170" duration="6047000" />
+      <workItem from="1519203958308" duration="12822000" />
+      <workItem from="1519375698750" duration="8223000" />
+      <workItem from="1519415761669" duration="2855000" />
+      <workItem from="1519909665338" duration="17902000" />
+      <workItem from="1520198595357" duration="592000" />
+      <workItem from="1520854433606" duration="1051000" />
+      <workItem from="1520858235632" duration="9750000" />
+      <workItem from="1521017818595" duration="1941000" />
+      <workItem from="1521562721359" duration="1207000" />
+      <workItem from="1523044722825" duration="759000" />
+      <workItem from="1523453630442" duration="204000" />
+      <workItem from="1523522222087" duration="2800000" />
+      <workItem from="1523525503947" duration="3681000" />
+      <workItem from="1525084046489" duration="9380000" />
+      <workItem from="1525605665651" duration="5181000" />
+      <workItem from="1525678383928" duration="32966000" />
+      <workItem from="1525767147972" duration="1193000" />
+      <workItem from="1525880194966" duration="24184000" />
+      <workItem from="1525942547513" duration="31789000" />
+      <workItem from="1526028610474" duration="3367000" />
+      <workItem from="1526219751697" duration="17442000" />
+      <workItem from="1526311109087" duration="1985000" />
+      <workItem from="1526460409290" duration="3428000" />
+      <workItem from="1526593877644" duration="43768000" />
+      <workItem from="1526908407427" duration="670000" />
+      <workItem from="1526978482243" duration="627000" />
+      <workItem from="1527181190329" duration="9026000" />
+      <workItem from="1527238188669" duration="55158000" />
+      <workItem from="1528314668693" duration="673000" />
+      <workItem from="1528316504907" duration="649000" />
+      <workItem from="1528364642184" duration="1393000" />
+      <workItem from="1528409661777" duration="1222000" />
+      <workItem from="1528716456639" duration="4347000" />
+      <workItem from="1528731728488" duration="15547000" />
+      <workItem from="1528800421358" duration="6562000" />
+      <workItem from="1528914266667" duration="1200000" />
+      <workItem from="1528993561936" duration="1298000" />
+      <workItem from="1529176827134" duration="11738000" />
+      <workItem from="1529198065483" duration="17218000" />
+      <workItem from="1529325043927" duration="709000" />
+      <workItem from="1529411380086" duration="595000" />
+      <workItem from="1529674102648" duration="80000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="812493000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50319827" side_tool="true" weight="0.14100185" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4968017" visible="true" weight="0.33436534" />
+      <window_info anchor="bottom" id="TypeScript" order="7" weight="0.28482974" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16944024" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.26808906" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="57" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/node_modules/mydatepicker/dist/directives/my-date-picker.focus.directive.metadata.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mydatepicker/dist/directives/my-date-picker.focus.directive.js.map">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mydatepicker/dist/directives/my-date-picker.focus.directive.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/gradelist.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/paymentswizard/paymentswizard.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/wardattendance/wardattendance.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/add-new-ward/add-new-ward.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/add-new-ward/add-new-ward.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="52" column="50" lean-forward="true" selection-start-line="49" selection-start-column="4" selection-end-line="52" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/test.html" />
+    <entry file="file://$PROJECT_DIR$/src/app/dailyreport.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/index.php" />
+    <entry file="file://$PROJECT_DIR$/src/app/StudentClass.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="14924" column="12" selection-start-line="14924" selection-start-column="12" selection-end-line="14924" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/perschoolClasses.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/paymentswizard/paymentswizard.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="746">
+          <caret line="84" column="1" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/paymentswizard/paymentswizard.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/paymentswizard/paymentswizard.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="324" column="5" selection-start-line="324" selection-start-column="5" selection-end-line="324" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/preschool/preschool.component.css" />
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/preschool-academics/preschool-academics.component.html" />
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/preschool-academics/preschool-academics.component.css" />
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/preschool-academics/preschool-academics.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/studentacademics/studentacademics.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-303">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/studentinfo/preschool/preschool.component.html" />
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/studentinfo/preschool/preschool.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/studentinfo/preschool/preschool-academics/preschool-academics.component.css" />
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/studentinfo/preschool/preschool-academics/preschool-academics.component.html" />
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/studentinfo/preschool/preschool-academics/preschool-academics.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/studentacademics/studentacademics.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/preschool/preschool.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="27" column="68" lean-forward="true" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/billpayments/billpayments.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="73" column="22" lean-forward="true" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/navbar/navbar.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.routing.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="84" lean-forward="true" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/studentinfo/studentinfo.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/studentinfo/studentinfo.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/studentinfo/studentinfo.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/dashboard/dashboard.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/wardlist/wardlist.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/studentacademics/studentacademics.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="55" column="39" lean-forward="true" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/preschool/preschool-academics/preschool-academics.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="38" column="6" lean-forward="true" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/preschool/preschool.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="36" column="53" lean-forward="true" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/preschool/preschool-academics/preschool-academics.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="124" column="20" lean-forward="true" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/studentdetails/preschool/preschool-academics/preschool-academics.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/wardlist/wardlist.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="97" column="50" lean-forward="true" selection-start-line="97" selection-start-column="50" selection-end-line="97" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/general.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="96" column="20" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/dashboard/dashboard.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/navbar/navbar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2074">
+          <caret line="125" column="22" selection-start-line="125" selection-start-column="22" selection-end-line="125" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

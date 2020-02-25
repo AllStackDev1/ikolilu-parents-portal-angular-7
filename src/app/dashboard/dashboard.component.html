@@ -1,0 +1,100 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <app-wardlist></app-wardlist>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-nav-tabs" >
+                    <div class="card-header" data-background-color="orange">
+                        <div class="nav-tabs-navigation">
+                            <div class="nav-tabs-wrapper">
+                                <ul class="nav nav-tabs" data-tabs="tabs">
+                                    <li class="active">
+                                        <a href="#infonotices" data-toggle="tab">
+                                            <i class="material-icons">developer_board</i>
+                                            Notice Board
+                                        <div class="ripple-container"></div></a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#recieptnotices" data-toggle="tab">
+                                            <i class="material-icons">receipt</i>
+                                            Receipt Notification
+                                        <div class="ripple-container"></div></a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#assignmentsnotices" data-toggle="tab">
+                                            <i class="material-icons">assignment_late</i>
+                                            Assignments Notifications
+                                        <div class="ripple-container"></div></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="tab-content">
+                            <div class="tab-pane active  table-responsive" id="infonotices" style="font-size: 12px">
+                                <table class="table table-hover">
+                                    <thead class="text-warning">
+                                        <tr style="text-align: center;">
+                                            <td style="width: 100px">Post Date</td>
+                                            <td>Description</td>
+                                            <td style="width: 140px;">Attachment</td>
+                                            <td>School</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let notice of notices" id="{{ notice.id }}">
+                                            <td>{{ notice.szpost_date }}</td>
+                                            <td>{{ notice.szdescription }}</td>
+                                            <td style="text-align: center;" [innerHTML] = notice.sz_filename></td>
+                                            <td>{{ notice.sz_schoolid }}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane table-responsive" id="recieptnotices">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" name="optionsCheckboxes" checked>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane table-responsive" id="assignmentsnotices">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" name="optionsCheckboxes">
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                            <td class="td-actions text-right">
+                                                <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                                                    <i class="material-icons">edit</i>
+                                                </button>
+                                                <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                    <i class="material-icons">close</i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

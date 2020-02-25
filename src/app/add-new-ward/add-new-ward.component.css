@@ -1,0 +1,103 @@
+.modal {
+    background: rgba(0,0,0,0.6);
+  }
+label{
+    color: #1b1a16;
+}
+.form-group.is-focused .form-control{
+    background-image: linear-gradient(#4caf50, #4caf50), linear-gradient(#D2D2D2, #D2D2D2) !important;
+    background-size: 100% 2px, 100% 1px;
+    transition-duration: 0.3s;
+}
+.modal {
+  overflow-y:scroll;
+}
+.modal-content .modal-body {
+  padding-top: 0 !important;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+.md-checkbox {
+  position: relative;
+  margin: 1em 0;
+  text-align: left;
+}
+.md-checkbox.md-checkbox-inline {
+  display: inline-block;
+}
+.md-checkbox label {
+  cursor: pointer;
+  display: inline;
+  line-height: 1.25em;
+  vertical-align: top;
+  clear: both;
+  padding-left: 1px;
+}
+.md-checkbox label:not(:empty) {
+  padding-left: 0.75em;
+}
+.md-checkbox label:before, .md-checkbox label:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.md-checkbox label:before {
+  width: 1.25em;
+  height: 1.25em;
+  background: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.54);
+  border-radius: 0.125em;
+  cursor: pointer;
+  transition: background .3s;
+}
+.md-checkbox input[type="checkbox"] {
+  outline: 0;
+  visibility: hidden;
+  width: 1.25em;
+  margin: 0;
+  display: block;
+  float: left;
+  font-size: inherit;
+}
+.md-checkbox input[type="checkbox"]:checked + label:before {
+  background: #337ab7;
+  border: none;
+}
+.md-checkbox input[type="checkbox"]:checked + label:after {
+  transform: translate(0.25em, 0.3365384615em) rotate(-45deg);
+  width: 0.75em;
+  height: 0.375em;
+  border: 0.125em solid #fff;
+  border-top-style: none;
+  border-right-style: none;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.ward-image{
+  width: 40px;
+  border-radius: 50%;
+  margin-top: -10px;
+  margin-left: 10px;
+}
+
+.wardname{
+  position: absolute;
+  margin-top: -40px;
+  left: 110px;
+  text-transform: uppercase;
+}
+
+.schoolname {
+  position: absolute;
+  margin-top: -40px;
+  right: 90px;
+}
+
+#parent-phone-no{
+  margin-bottom: 20px;
+    width: 170px;
+}

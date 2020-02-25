@@ -1,0 +1,185 @@
+<div class="fade"></div>
+<div class="preload">
+    <img src='assets/img/loading.gif'>
+</div>
+<div class="col-md-12 studentacademics">
+    <div class="card">
+        <div class="form-group">
+            <div class="nav-tabs-navigation">
+                <div class="nav-tabs-wrapper">
+                    <label for="class">Select Class : </label>
+                    <select class="cs-select cs-skin-border btn btn-sm" id="class" [(ngModel)]="selectClass">
+                        <option *ngFor="let szclass of szclasses" value={{szclass.sz_class}}
+                                [class.selected]="szclass.sz_class === selectClass">
+                            {{szclass.sz_class}}
+                        </option>
+                    </select>
+                    <label for="term">Select Term : </label>
+                    <select class="cs-select cs-skin-border btn btn-sm" id="term" [(ngModel)]="selectedTerm">
+                        <option value="" selected="selected"></option>
+                        <option value="1st">1st</option>
+                        <option value="2nd">2nd</option>
+                        <option value="3rd">3rd</option>
+                    </select>
+                    <label for="examtype">Exam Type : </label>
+                    <select class="cs-select cs-skin-border btn btn-sm" id="examtype" [(ngModel)]="selectedExamType">>
+                        <option *ngFor="let examtype of examtypes" value={{examtype.sz_examtype}}
+                                [class.selected]="examtype.sz_examtype === selectedExamType">
+                            {{examtype.sz_examtype}}
+                        </option>
+                    </select>
+                    <button type="button" class="btn btn-success btn-sm" (click)="viewGradeInformation()">
+                        <i class="material-icons">search</i>View
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row studentacademics">
+    <div class="col-md-12">
+        <div class="card card-nav-tabs">
+            <div class="card-header" data-background-color="orange">
+                <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs" data-tabs="tabs">
+                            <li class="active" id="ward_grade">
+                                <a href="#stu_grades" data-toggle="tab">
+                                    <i class="material-icons">grade</i>
+                                    Ward's Grades
+                                    <div class="ripple-container"></div>
+                                </a>
+                            </li>
+                            <li class="" id="gradinganalysis">
+                                <a href="#grading_analysis" data-toggle="tab">
+                                    <i class="material-icons">assessment</i>
+                                    Grading Analysis
+                                    <div class="ripple-container"></div>
+                                </a>
+                            </li>
+                            <li class="" id="teachercomments">
+                                <a href="#teacher-comments" data-toggle="tab">
+                                    <i class="material-icons">comment</i>
+                                    Teachers Comment
+                                    <div class="ripple-container"></div>
+                                </a>
+                            </li>
+                            <li class="" id="classscore">
+                                <a href="#stu_scores" data-toggle="tab">
+                                    <i class="material-icons">check_box</i>
+                                    Class Scores
+                                    <div class="ripple-container"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="stu_grades">
+                        <div class="card-content table-responsive" id="non-preschool">
+                            <table class="table table-hover">
+                                <thead class="text-warning">
+                                <tr>
+                                    <th>Subject Name</th>
+                                    <th>Class Score</th>
+                                    <th>Exam Score</th>
+                                    <th>Total</th>
+                                    <th>Position</th>
+                                    <th>Grade</th>
+                                    <th>Comment</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr *ngFor="let grades of gradelist">
+                                    <td>{{ grades.subjectname }}</td>
+                                    <td>{{ grades.szclassperc }}</td>
+                                    <td>{{ grades.szxamperc }}</td>
+                                    <td>{{ grades.sztotal }}</td>
+                                    <td>{{ grades.szposition}}</td>
+                                    <td>{{ grades.grade}}</td>
+                                    <td>{{ grades.comments}}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="card card-nav-tabs" style="margin-top: 55px;">
+                                <div class="card-header" data-background-color="orange">
+                                    <div class="nav-tabs-navigation">
+                                        <div class="nav-tabs-wrapper">
+                                            <ul class="nav nav-tabs" data-tabs="tabs">
+                                                <li class="active">
+                                                    <a data-toggle="tab">
+                                                            <i class="material-icons">language</i> Term General Remarks
+                                                        <div class="ripple-container"></div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <table class="table table-hover" style="margin-top: 20px;">
+                                    <tbody>
+                                        <tr *ngFor="let remark of remarks">
+                                            <td style="min-width: 150px;">{{ remark.szremarks }}</td>
+                                            <td style="text-align: justify;">{{ remark.szcomments }}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="grading_analysis">
+                        <div class="card-content table-responsive">
+                            <div [hidden]="!BarChart" class="charts">
+                                <canvas id="BarChart">{{ BarChart }}</canvas>
+                            </div>
+                            <div [hidden]="!HorizontalBar" class="charts">
+                                <canvas id="HorizontalBar">{{ HorizontalBar }}</canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="teacher-comments">
+                        <div class="card-content table-responsive" id="non-preschool">
+                            <table class="table table-hover">
+                                <thead class="text-warning">
+                                <tr>
+                                    <th style="min-width: 150px;">Teacher</th>
+                                    <th style="min-width: 200px;">Subject</th>
+                                    <th>Comment</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr *ngFor="let comment of teacherscomment" style ="font-size: 12px;">
+                                    <td>{{ comment.teachername }}</td>
+                                    <td>{{ comment.subjectname }}</td>
+                                    <td style="text-align: justify;">{{ comment.szcomments }}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="stu_scores">
+                        <div class="form-group" id="dropdowns3">
+                            <label>Scores Information : </label>
+                            <select title="Choose Subject" class="cs-select btn cs-skin-border btn-sm"
+                                    id="seletedSubjectcode" (change)="getStudentScores($event.target.value)">
+                                <option value="" selected> Choose Subject</option>
+                                <option *ngFor="let szsubject of subjectsdetails" [value]=szsubject.szsubjectid>
+                                    {{szsubject.subjectname}}
+                                </option>
+                            </select>
+                        </div>
+                        <div class="card-content table-responsive" id="contentWork"></div>
+                        <div class="card-content table-responsive" id="contentTest"></div>
+                        <div class="card-content table-responsive" id="contentHome"></div>
+                        <div class="card-content table-responsive" id="contentProject"></div>
+                        <div class="card-content table-responsive" id="contentExam"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

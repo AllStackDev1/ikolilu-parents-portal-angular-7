@@ -1,0 +1,27 @@
+.logo-img>img{
+    width: 100px;
+    position: relative;
+    top:0;
+
+}
+.title{
+    margin-top: 8px;
+    font-family: cursive;
+    color: #4caf50;
+    font-size: 19px;
+}
+
+.sidebar-text>ul>li>a, .sidebar-text>ul>li>a>i{
+    color: #4caf50;
+}
+
+.nav>.active>a, .nav>.active>a>i{
+    color: white !important;
+}
+::ng-deep .sidebar .nav li.active > a{
+    background-color: #4caf50 !important;
+}
+.nav-mobile-menu>li>a, i, #logout{
+    color: #4caf50 !important;
+}
+

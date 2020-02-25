@@ -1,0 +1,183 @@
+<div class="fade"></div>
+<div class="preload">
+    <img src='assets/img/loading.gif'>
+</div>
+<div class="col-md-12">
+  <div class="card" >
+    <div class="form-group">
+        <div class="nav-tabs-navigation">
+            <div class="nav-tabs-wrapper">
+                    <label>Select Class : </label>
+                <select class="cs-select cs-skin-border btn btn-sm " [(ngModel)]="selectClass" >
+                        <option *ngFor="let szclass of szclasses" value= {{szclass.sz_class}}  [class.selected] ="szclass.sz_class === selectClass"  >
+                                {{szclass.sz_class}}
+                             </option>
+                </select>
+                    <label>Select Term : </label>
+                <select class="cs-select cs-skin-border btn btn-sm" [(ngModel)]="selectedTerm" >
+                    <option  value="1st">1st</option>
+                    <option  value="2nd">2nd</option>
+                    <option  value="3rd">3rd</option>
+                </select>
+                <button type="submit" class="btn btn-success btn-sm" (click)="viewBillPayInfo()"><i class="material-icons">search</i> View</button>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="card card-stats" >
+            <div class="card-header" data-background-color="orange">
+                <i class="material-icons">monetization_on</i>
+            </div>
+            <div class="card-content">
+                <p class="category">Bill Total</p>
+                <h3 class="title">{{ szbill }}</h3>
+            </div>
+            <div class="card-footer">
+                <div class="stats">
+                    <i class="material-icons text-danger">monetization_on</i> Total Bill Incl. Arrears
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="card card-stats" >
+            <div class="card-header" data-background-color="green">
+                <i class="material-icons">payment</i>
+            </div>
+            <div class="card-content">
+                <p class="category">Payments</p>
+                <h3 class="title">{{ szpayments }}</h3>
+            </div>
+            <div class="card-footer">
+                <div class="stats">
+                    <i class="material-icons text-danger">payment</i>All Payments
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="card card-stats" >
+            <div class="card-header" data-background-color="red">
+                <i class="material-icons">account_balance_wallet</i>
+            </div>
+            <div class="card-content">
+                <p class="category">Balance</p>
+                <h3 class="title">{{ szbalances }}</h3>
+            </div>
+            <div class="card-footer">
+                <div class="stats">
+                    <i class="material-icons text-danger">account_balance_wallet</i> Current Balance of Account
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card card-nav-tabs" >
+            <div class="card-header" data-background-color="orange">
+                <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs" data-tabs="tabs">
+                            <li class="active">
+                                <a href="#stu_bills" data-toggle="tab">
+                                    <i class="material-icons">content_copy</i>
+                                    TERM BILLS / PAYMENTS
+                                <div class="ripple-container"></div></a>
+                            </li>
+                            <li class="">
+                                <a href="#bill_payments" data-toggle="tab">
+                                    <i class="material-icons">history</i>
+                                    STUDENT ACCOUNT HISTORY
+                                <div class="ripple-container"></div></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- content goes here -->
+            <div class="card-content">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="stu_bills">
+                        <div class="card-content table-responsive">
+                            <table class="table table-hover">
+                                <thead class="text-warning">
+                                    <tr class="danger">
+                                        <th>Transaction Total </th>
+                                        <th> </th>
+                                        <td></td>
+                                        <th><h4 class="title">{{ szbill }}</h4></th>
+                                        <th><h4 class="title">{{ szpayments }}</h4></th>
+                                        <td class="td-actions text-right">
+                                            <button type="button" rel="tooltip" title="Click to pay online" class="btn btn-danger btn-simple btn-xs" (click)="modal.show(currency, szbalances, 'Fee Payment', '0000')"> <i class="material-icons">payment</i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Bill Item</th>
+                                        <th>Cur.</th>
+                                        <th>Debit</th>
+                                        <th>Credit</th>
+                                        <th>Pay</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let bills of billpaylist " >
+                                        <td>{{ bills.date }}</td>
+                                        <td>{{ bills.billitem }}<span class="sr-only">{{ billitemid }}</span></td>
+                                        <td>{{ bills.symbol}}</td>
+                                        <td>{{ bills.debit }}</td>
+                                        <td>{{ bills.credit }}</td>
+                                        <td class="td-actions text-right">
+                                            <button type="button" rel="tooltip" title="Click to pay online" class="btn btn-default" (click)="modal.show(bills.symbol, bills.debit, bills.billitem, billitemid)">
+                                                <i class="material-icons">payment</i>
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                     <div class="tab-pane" id="bill_payments">
+                         <div class="card-content table-responsive">
+                             <table class="table table-hover">
+                                 <thead class="text-warning">
+                                 <tr>
+                                     <th>Date</th>
+                                     <th>Term</th>
+                                     <th>Aca. Year</th>
+                                     <th>Decription</th>
+                                     <th>Trans</th>
+                                     <th>Amount</th>
+                                     <th>Cur</th>
+                                     <th>Debit</th>
+                                     <th>Credit</th>
+                                 </tr>
+                                 </thead>
+                                 <tbody>
+                                 <tr *ngFor="let billhist of billHistory " >
+                                     <td>{{ billhist.date }}</td>
+                                     <td>{{ billhist.term }}</td>
+                                     <td>{{ billhist.acayear }}</td>
+                                     <td>{{ billhist.billitem }}</td>
+                                     <td>{{ billhist.transaction }}</td>
+                                     <td>{{ billhist.amount }}</td>
+                                     <td>{{ billhist.currency}}</td>
+                                     <td>{{ billhist.debit }}</td>
+                                     <td>{{ billhist.credit }}</td>
+                                 </tr>
+                                 </tbody>
+                             </table>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>
+<app-paymentswizard #modal></app-paymentswizard>
+

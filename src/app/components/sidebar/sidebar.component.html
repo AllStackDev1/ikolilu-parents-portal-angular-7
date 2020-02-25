@@ -1,0 +1,42 @@
+<div class="logo">
+    <a href="https://www.ikolilu.com" class="simple-text">
+        <div class="logo-img">
+            <img src="assets/img/ikolilu.png" />
+        </div>
+        <div class="title">Parents Portal</div>
+    </a>
+</div>
+<div class="sidebar-wrapper">
+    <ul class="nav nav-mobile-menu" *ngIf="isMobileMenu()">
+        <li>
+            <a href="#{{parent_name}}">
+                <span style= "font-weight: 600; text-transform: uppercase; }">{{parent_name}}</span> <i class="material-icons">person</i>
+            </a>
+        </li>
+        <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}}">
+            <a [routerLink]="[menuItem.path]">
+                <i class="material-icons">{{menuItem.icon}}</i>
+                <p>{{menuItem.title}}</p>
+            </a>
+        </li>
+        <li class="">
+            <a class="dropdown-toggle">
+                <i class="material-icons">power_settings_new</i>
+                <p class="hidden-lg hidden-md"><a id="logout" (click)="LogOut()">Log Out</a></p>
+            </a>
+        </li>
+    </ul>
+    <div class="nav-container sidebar-text hidden-xs hidden-sm">
+        <ul class="nav">
+            <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}}">
+                <a [routerLink]="[menuItem.path]">
+                    <i class="material-icons">{{menuItem.icon}}</i>
+                    <p>{{menuItem.title}}</p>
+                </a>
+                <ul class="dropdown-menu">
+                        <li><a (click)="LogOut()">Log Out</a></li>
+                    </ul>
+            </li>
+        </ul>
+    </div>
+</div>

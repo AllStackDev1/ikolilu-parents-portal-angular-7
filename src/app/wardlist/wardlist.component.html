@@ -1,0 +1,54 @@
+<div class="fade"></div>
+
+<div class="col-md-12">
+    <div class="card" >
+        <div class="card-header" data-background-color="blue">
+            <ul class="nav">
+                <li class="active">
+                    <a>
+                        <i class="material-icons">account_circle</i>
+                        My Wards
+                        <div class="ripple-container"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="preload">
+            <img src='assets/img/loading.gif'>
+        </div>
+        <div class="card-content table-responsive" style="font-size: 12px">
+            <table class="table table-hover">
+                <thead class="table-th text-warning">
+                    <tr>
+                        <th>Profile</th>
+                        <th style="text-align: center">Ward ID</th>
+                        <th style="padding-left: 30px;">Ward Name</th>
+                        <th>Gender</th>
+                        <th>Current Class</th>
+                        <th style="padding-left: 30px;">School</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ward of wardlists" [class.selected] ="ward === selectedWard" (click)="onSelectWard(ward)" style="cursor: pointer; font-size: 12px">
+                        <td><img class="img-thumbnail img-responsive" alt="image" src="{{ ward.photos }}" style="width: 50px; height: 50px;"/></td>
+                        <td>{{ ward.student_id }}<span class="sr-only">{{ ward.sz_schoolid }}</span></td>
+                        <td>{{ ward.name }}</td>
+                        <td style="text-transform: uppercase;">{{ ward.sex }}</td>
+                        <td><span >{{ ward.szclass }}</span> 
+                            <span class="sr-only">{{ ward.szprogram }}</span>
+                            <span class="sr-only">{{ ward.szterm }}</span>
+                            <span class="sr-only">{{ ward.szacayr }}</span>
+                        </td>
+                        <td>{{ ward.schoolname}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="submit" class="btn btn-success pull-right" (click)="modal.show()"><i class="material-icons">search</i>Find My Wards</button>
+        </div>
+    </div>
+</div>
+<app-add-new-ward #modal></app-add-new-ward>
+
+           
+    
+    
