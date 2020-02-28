@@ -16,10 +16,8 @@ export class AppComponent implements OnInit {
     constructor() {}
 
     ngOnInit() {
-        // sessionStorage.setItem('name', 'Nedu');
-        // sessionStorage.setItem('email', 'mrquarcs@gmail.com');
-        // sessionStorage.setItem('email', 'tim@mycrointelsolutions.net');
-        // sessionStorage.setItem('email', 'Nedu63ima@gmail.com');
+        // sessionStorage.setItem('name', 'Timothy Owusu');
+        // sessionStorage.setItem('email', 'tim@ikolilu.com');
         // sessionStorage.setItem('phonenumber', '0243548900');
         if (!sessionStorage.getItem('name') && !sessionStorage.getItem('email') && !sessionStorage.getItem('phonenumber') ) {
             document.location.href = 'https://www.ikolilu.com/portal/v1.4.2/';

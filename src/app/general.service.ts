@@ -230,17 +230,13 @@ export class GeneralService {
     const localPath = this.apiPath + 'AddWardsToFile/?wardInfo=' + JSON.stringify(array);
     return this.http.get(localPath).map(res => res.json());
   }
-  // public addWard(fb) {
-  //     const localPath = this.apiPath + 'VerifyParent/';
-  //     return this.http.post(localPath, fb).map(res => res.json());
-  // }
-  public mtnMOMO(szterm, szacayear, szclass, msisdn, network, billitem,
-    billitemname, szamount, studentname, payee, studentid, school) {
-      const localPath = 'https://www.ikolilu.com:23000/MTNMomoPay?network='
-       + network + '&msisdn=' + msisdn + '&szterm=' + szterm + '&szacayear='
+  public mtnMOMO(szterm, szacayear, szclass, msisdn, sznetwork, szbillitem,
+    szbillname, szamount, studentname, payeename, studentid, szschoolid) {
+      const localPath = 'https://www.ikolilu.com/api/v1.0/paymentapi.php/DoMoMoPayment/?sznetwork='
+       + sznetwork + '&msisdn=' + msisdn + '&szterm=' + szterm + '&szacayear='
        + szacayear + '&studentid=' + studentid + '&studentname=' + studentname +
-       '&szclass=' + szclass + '&billitem=' + billitem + '&billitemname='
-       + billitemname + '&szamount=' + szamount + '&payee=' + payee + '&school=' + school;
+       '&szclass=' + szclass + '&szbillitem=' + szbillitem + '&szbillname='
+       + szbillname + '&szamount=' + szamount + '&payeename=' + payeename + '&szschoolid=' + szschoolid;
       return this.http.get(localPath, {}).map(res => res.json());
   }
   public postComment(formData) {

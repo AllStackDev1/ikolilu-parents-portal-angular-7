@@ -4,6 +4,6 @@ WORKDIR /pportal
 COPY package*.json ./
 RUN npm install
 COPY . /pportal
-RUN npm run build
-EXPOSE 8000
+# RUN npm run build
+EXPOSE 7000
 CMD ["npm", "start"]

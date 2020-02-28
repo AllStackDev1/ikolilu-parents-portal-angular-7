@@ -412,18 +412,24 @@ export class PaymentswizardComponent implements OnInit {
       const szacayear = sessionStorage.getItem('currentAcaYr');
       const szclass = sessionStorage.getItem('currentClass');
       const msisdn = this.cellnumber;
-      const network = this.mmtype;
-      const billitem = this.item_id;
-      const billitemname = this.paying_item;
+      const sznetwork = this.mmtype;
+      const szbillitem = this.item_id;
+      const szbillname = this.paying_item;
       const szamount = this.mm_amt;
       const studentname = sessionStorage.getItem('studentName');
-      const payee = this.mm_name;
+      const payeename = this.mm_name;
       const studentid = sessionStorage.getItem('studentid');
-      const school  = sessionStorage.getItem('schoolid');
-
-      this._genservice.mtnMOMO(szterm, szacayear, szclass, msisdn, network, billitem,
-        billitemname, szamount, studentname, payee, studentid, school
-      ).subscribe(response => {});
+      const szschoolid  = sessionStorage.getItem('schoolid');
+      
+      this._genservice.mtnMOMO(szterm, szacayear, szclass, msisdn, sznetwork, szbillitem,
+        szbillname, szamount, studentname, payeename, studentid, szschoolid
+      ).subscribe(response => {
+        if(response.responseCode === '03'){
+          alert(response.responseMessage)
+        }else{
+          alert('Unexpected error, try again!')
+        }
+      });
     } else if (payment_method == '4') {}
 
   }
