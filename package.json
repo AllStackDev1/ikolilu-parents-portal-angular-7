@@ -37,7 +37,7 @@
     "googleapis": "19.0.0",
     "group-array": "^0.3.3",
     "jquery": "^3.3.1",
-    "moment": "^2.18.1",
+    "moment": "^2.29.4",
     "mydatepicker": "^2.6.3",
     "ng-fullcalendar": "^1.4.6",
     "perfect-scrollbar": "1.1.0",
